@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 align="center">Student Registration Form</h1>
+    <hr>
+    <form action="#" method="post" >
+        <!-- Name -->
+        <label style="font-size: larger;" for="fullname"> <b>Full Name:</b></label>
+        <input type="text" id="fullname" name="fullname" placeholder="Enter Your full name" required>
+        <br><br>
+         <!-- Email -->
+        <label style="font-size: larger;" for="email"> <b>Email:</b></label>
+        <input type="email" id="email" name="email" placeholder="Enter valid email Address" required>
+        <br><br>
+        <!-- Password -->
+         <label style="font-size: larger;" for="password"> <b>Password:</b></label>
+        <input type="password" id="password" name="password" placeholder="Enter password" required>
+        <br><br>
+        <!--Gender-->
+        <label style="font-size: larger;" for="gender"> <b>Gender:</b></label>
+        <input type= "radio" id="male" name="gender" value="male"> Male
+        <input type= "radio" id="female" name="gender" value="female"> Female
+        <input type= "radio" id="other" name="gender" value="other"> Other
+        <br><br>
+        <!-- Course -->
+        <label style="font-size: larger;" for="course"> <b>Course:</b></label>
+        <select style="width: 12%; font-style: italic; font-size: medium;" id="course" name="course" required>
+            <option value="select course"> <b>-- Select Course -- </b></option>
+            <option value="cse">Computer Science Engineering</option>
+            <option value="ece">Electronics and Communication Engineering</option>
+            <option value="mech">Mechanical Engineering</option>
+        </select>
+        <br><br>
+        <!-- Contact-->
+        <label style="font-size: larger;" for="contact"> <b>Contact No:</b></label>
+        <input type="tel" id="contact" name="contact" placeholder="Enter phone number" required>
+        <br><br>
+        <!-- Address -->
+        <label style="font-size: larger;" for="address"> <b>Address:</b></label>
+        <br>
+        <textarea id="address" name="address" rows="4" cols="50" placeholder= "Enter your address" required></textarea>
+        <br><br>
+        <!-- Buttons -->
+        <input type="submit" value="Register">
+        <input type="reset" value="Clear">
+        <hr>
+        <div style="text-align: center;"> <b> &copy; 2025 Student Registration Form </b></div>
+    </form>
+    <h3 align="center"> Name: Naitik Singhal <br> Admission No: 2025B01011211 <br> Section: CSE-21</h3>
+</body>
+</html>
