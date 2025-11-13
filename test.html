@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table of Employees names of a company</title>
+
+    <style>
+      table {
+        border-collapse: collapse;
+        width: 100%;
+        transition: background-color 0.15s ease;
+      }
+      th, td {
+        padding: 10px;
+        text-align: left;
+      }
+      tbody tr:hover {
+        background-color: rgba(0, 123, 255, 0.08); 
+      }
+
+      tbody tr {
+        transition: transform 0.12s ease, box-shadow 0.12s ease;
+      }
+      tbody tr:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 2px 6px rgba(0,0,0,0.06);
+      }
+
+      th {
+        background: #f4f4f4;
+      }
+    </style>
+</head>
+<body>
+    <table border="2" cellpadding="10" cellspacing="0">
+        <tr>
+            <th>Employee ID</th>
+            <th>Employee Name</th>
+            <th>Department</th>
+        </tr>
+        <tr>
+            <td style="background-color: bisque;">101</td>
+            <td style="background-color: bisque;">Naitik Singhal</td>
+            <td style="background-color: bisque;">Marketing</td>
+        </tr>
+        <tr>
+            <td>102</td>
+            <td style="background-color: rgb(30, 203, 185);">Manya Gupta</td>
+            <td>Sales</td>
+        </tr>
+        <tr>
+            <td style="background-color: aqua;">103</td>
+            <td style="background-color: aqua;">Mridul Goyal</td>
+            <td style="background-color: aqua;">IT</td>
+        </tr>
+        <tr>
+            <td>104</td>
+            <td style="background-color: orangered;">Mayank kotuli</td>
+            <td>HR</td>
+        </tr>
+    </table>
+    
+</body>
+</html>
