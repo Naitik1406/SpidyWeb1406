@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Product Grid</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: aliceblue;
+            padding: 20px;
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .container {
+            max-width: 1600px;
+            margin: 0 auto;
+            background: white;
+            padding: 30px;
+            border-radius: 2px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.12);
+        }
+
+        .container h2 {
+            margin-top: 0;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+        }
+
+        .card {
+            background: #fff;
+            border: 1px solid #e0e0e0;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 16px;
+            text-align: center;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+        }
+
+        .card img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 6px;
+            margin-bottom: 10px;
+        }
+
+        .card h3 {
+            font-size: 18px;
+            margin: 8px 0;
+        }
+
+        .card p {
+            font-size: 14px;
+            color: #555;
+            margin: 4px 0;
+        }
+
+        .price {
+            font-weight: bold;
+            color: #007bff;
+            margin-top: 8px;
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 1px solid #e0e0e0;
+        }
+
+        @media (max-width: 1024px) {
+            .grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 600px) {
+            .grid {
+                grid-template-columns: 1fr;
+            }
+
+            .container {
+                padding: 16px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h2>Responsive Product Grid</h2>
+        <div class="grid">
+            <div class="card">
+                <img src="image4.jpg" alt="Product 1">
+                <h3>Product 1</h3>
+                <p>High-quality item with great features.</p>
+                <p class="price">₹499</p>
+            </div>
+
+            <div class="card">
+                <img src="image1.jpeg" alt="Product 2">
+                <h3>Product 2</h3>
+                <p>Durable and stylish for daily use.</p>
+                <p class="price">₹799</p>
+            </div>
+
+            <div class="card">
+                <img src="image2.jpg" alt="Product 3">
+                <h3>Product 3</h3>
+                <p>Lightweight and comfortable.</p>
+                <p class="price">₹1,299</p>
+            </div>
+
+            <div class="card">
+                <img src="image3.jpg" alt="Product 4">
+                <h3>Product 4</h3>
+                <p>Trendy design with premium quality.</p>
+                <p class="price">₹999</p>
+            </div>
+        </div>
+
+        <div class="footer">
+            <h3>Naitik Singhal</h3>
+            <p>2025B01011211</p>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Box Model</title>
+    <style>
+        body {
+            background-color: rgba(8, 19, 82, 0.934);
+            margin: 0;
+            padding: 40px;
+            font-family: Arial, sans-serif;
+        }
+
+        h2 {
+            color: white;
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .margin {
+            width: 450px;
+            margin: 0 auto;
+            background-color: orangered;
+            padding: 20px;
+            text-align: center;
+            color: white;
+            font-weight: bold;
+        }
+
+        .border {
+            background-color: rgb(5, 195, 248);
+            padding: 20px;
+            text-align: center;
+            color: white;
+            font-weight: bold;
+        }
+
+        .padding {
+            background-color: yellow;
+            padding: 30px;
+            text-align: center;
+            color: white;
+            font-weight: bold;
+        }
+
+        .content {
+            background-color: rgb(12, 207, 198);
+            padding: 80px 40px;
+            text-align: center;
+            color: white;
+            font-weight: bold;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <h2>CSS Box Model</h2>
+    
+    <div class="margin">
+        Margin
+        <div class="border">
+            Border
+            <div class="padding" style="color: black;">
+                Padding
+                <div class="content">
+                    Content
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

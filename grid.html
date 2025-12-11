@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .item-a{
+            grid-column-start: 1;
+            grid-column-end: 4;
+            background-color: #ff4500;
+            text-align: center;
+            line-height: 100px;
+            border-radius: 10%;
+
+        }
+        .item-b{
+            grid-row-start: 2;
+            grid-row-end: 2;
+            grid-column-start: 1;
+            grid-column-end: 2;
+            background-color: lightcoral;
+            text-align: center;
+            line-height: 100px;
+            border-radius: 10%;
+
+
+
+        }
+        .item-c{
+            grid-row-start: 3;
+            grid-column-start: 1;
+            grid-column-end: 4;
+            background-color: lightgreen;
+            text-align: center;
+            line-height: 100px;
+            border-radius: 10%;
+
+        }
+        .item-d{
+            grid-row-start: 2;
+            grid-column-start: 3;
+            grid-column-end: 4;
+            background-color: lightblue;
+            text-align: center;
+            line-height: 100px;
+            border-radius: 10%;
+
+        }
+        .item-e{
+            grid-row-start: 2;
+            grid-column-start: 2;
+background-color: rgba(236, 236, 223, 0.751);
+            text-align: center;
+            line-height: 100px;
+            border-radius: 10%;
+        }
+        .container{
+            display: grid;
+            gap: 1px;
+            border: 2px solid black;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(3, 100px);
+            justify-content: center;
+        }
+
+            
+    
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+    <div class="item-a">Header Text</div>
+    <div class="item-b">Main</div>
+    <div class="item-c">footer</div>
+    <div class="item-d">Sidebar</div>
+    <div class="item-e">Empty</div>
+    </div>
+
+    
+</body>
+</html>
